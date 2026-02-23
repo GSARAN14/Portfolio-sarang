@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARAN G - Student Portfolio | AI/ML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-brain"></i> SARAN G</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with AI/ML Theme -->
+    <section id="home" class="hero">
+        <div class="neural-bg">
+            <canvas id="neuralCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image-container">
+                <img src="profile.png" alt="Your Photo" class="hero-image">
+                <div class="image-border"></div>
+            </div>
+            <h1 class="gradient-text">SARAN G</h1>
+            <p class="hero-subtitle">Student | AI/ML Enthusiast | Research Intern</p>
+            <p class="hero-description">Passionate about Machine Learning | Exploring AI possibilities | Building intelligent solutions</p>
+            <div class="hero-buttons">
+                <button class="cta-btn primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+                <a href="Resume.pdf" target="_blank" class="cta-btn secondary">View Resume</a>
+            </div>
+            <div class="social-icons-hero">
+                <a href="https://github.com/GSARAN14" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saran-g-80427a295/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://huggingface.co/saran14" class="social-icon"><i class="fab fa-hugging-face"></i></a>
+                <a href="https://www.kaggle.com/sarang1418" class="social-icon"><i class="fab fa-kaggle"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a passionate student at Anna University with a strong interest in Artificial Intelligence and Machine Learning.
+                        I'm dedicated to learning cutting-edge technologies and applying them to solve real-world problems through innovative projects.
+                    </p>
+                    <p>
+                        My journey in ML started with curiosity, and now I'm actively building projects in deep learning, computer vision, and NLP.
+                        I love taking on challenging problems, collaborating with peers, and continuously expanding my knowledge in AI/ML technologies.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>6+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Skills</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="ml-illustration">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="connection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-university"></i></div>
+                    <h3>Bachelor of Technology</h3>
+                    <p class="institution">Anna University</p>
+                    <p class="major">Information Technology / Computer Science</p>
+                    <p class="details">Currently pursuing my degree with focus on AI/ML specialization</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certifications & Courses</h3>
+                    <div class="cert-list">
+                        <span class="cert-badge">Deep Learning Specialization</span>
+                        <span class="cert-badge">NLP Fundamentals</span>
+                        <span class="cert-badge">Computer Vision Basics</span>
+                        <span class="cert-badge">Data Science with Python</span>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon"><i class="fas fa-award"></i></div>
+                    <h3>Achievements & Awards</h3>
+                    <div class="achievement-list">
+                        <span class="achievement-item">✓ Dean's List - Academic Excellence</span>
+                        <span class="achievement-item">✓ Research Paper Published</span>
+                        <span class="achievement-item">✓ Hackathon Winner - ML Track</span>
+                        <span class="achievement-item">✓ Project Lead - Multiple Initiatives</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-box"></i> ML Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">Keras</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data & Big Data</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Spark</span>
+                        <span class="tag">Hadoop</span>
+                        <span class="tag">SQL DB</span>
+                        <span class="tag">NoSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cube"></i> Specializations</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Reinforcement Learning</span>
+                        <span class="tag">GANs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card featured">
+                    <div class="project-badge">Speech Recognition</div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #2d3748, #1a202c);">ASR Model</div>
+                    <h3>Finetuned Whisper ASR Model for Tamil</h3>
+                    <p>Developed and finetuned OpenAI's Whisper model for Tamil language with Word Error Rate (WER) of 70%, enabling accurate speech-to-text conversion for regional languages.</p>
+                    <div class="project-tech">
+                        <span>Whisper</span>
+                        <span>NLP</span>
+                        <span>Speech Recognition</span>
+                        <span>Tamil</span>
+                    </div>
+                    <a href="https://huggingface.co/saran14/whisper-tamil" class="project-link"><i class="fas fa-arrow-right"></i> View Project</a>
+                </div>
+                <div class="project-card featured">
+                    <div class="project-badge">Gender Classification</div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #3182ce, #2c5aa0);">Classification</div>
+                    <h3>Gender Classifier Using Regional Name</h3>
+                    <p>Built an intelligent classification model to predict gender from regional names using machine learning techniques, achieving high accuracy across diverse name datasets.</p>
+                    <div class="project-tech">
+                        <span>ML</span>
+                        <span>Classification</span>
+                        <span>NLP</span>
+                    </div>
+                    <a href="https://huggingface.co/saran14/Name_prediction_final" class="project-link"><i class="fas fa-arrow-right"></i> View Project</a>
+                </div>
+                <div class="project-card featured">
+                    <div class="project-badge">Edge Computing</div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #4c51bf, #3f3d9f);">Edge deployment</div>
+                    <h3>ML Model Hyperparameter Optimization on Edge</h3>
+                    <p>Implemented hyperparameter tuning and model optimization techniques for edge computing devices, enabling efficient machine learning inference on resource-constrained environments.</p>
+                    <div class="project-tech">
+                        <span>Edge Computing</span>
+                        <span>Hyperparameter Tuning</span>
+                        <span>Model Optimization</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-arrow-right"></i> View Project</a>
+                </div>
+                <div class="project-card featured">
+                    <div class="project-badge">Web Application</div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #2d3748, #1f2937);">Web App</div>
+                    <h3>News Aggregate Application</h3>
+                    <p>Developed a comprehensive news aggregation platform that collects, categorizes, and displays news from multiple sources with intelligent content filtering and recommendations.</p>
+                    <div class="project-tech">
+                        <span>Web Development</span>
+                        <span>API Integration</span>
+                        <span>Data Processing</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-arrow-right"></i> View Project</a>
+                </div>
+                <div class="project-card featured">
+                    <div class="project-badge">Sports Analytics</div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #3182ce, #2563eb);">Cricket App</div>
+                    <h3>Cricket Application - Anna University</h3>
+                    <p>Created a feature-rich cricket application with real-time statistics, player analysis, match tracking, and performance metrics developed at Anna University.</p>
+                    <div class="project-tech">
+                        <span>Mobile App</span>
+                        <span>Data Analytics</span>
+                        <span>Sports Analytics</span>
+                    </div>
+                    <a href="https://tournament.ksrct.ac.in" class="project-link"><i class="fas fa-arrow-right"></i> View Project</a>
+                </div>
+                <div class="project-card featured">
+                    <div class="project-badge">Deep Learning</div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #2d3748, #1a202c);">Neural Network</div>
+                    <h3>Neural Network Based Learn By Watch Model</h3>
+                    <p>Developed an advanced neural network model that learns visual patterns through observation. The model mimics human-like learning by analyzing video sequences and extracting meaningful features for intelligent decision-making.</p>
+                    <div class="project-tech">
+                        <span>Neural Networks</span>
+                        <span>Deep Learning</span>
+                        <span>Computer Vision</span>
+                        <span>TensorFlow</span>
+                    </div>
+                    <a href="" class="project-link"><i class="fas fa-arrow-right"></i> View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <h2>Internship & Professional Experience</h2>
+            <div class="internship-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">OCT 2025- DEC 2025</div>
+                    <div class="timeline-content">
+                        <h3>AI/ML Research Intern</h3>
+                        <p class="company">IGrad Ai Labs</p>
+                        <p>Worked on CNN Model to Find the umpire Action Auto-Highlight generater using Custom Trained model using YoloV12 models.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Whisper</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Ongoing</div>
+                    <div class="timeline-content">
+                        <h3>Student Research Center</h3>
+                        <p class="company">TRAIT AI Lab</p>
+                        <p>Contributing to multiple AI/ML research projects including classification models, edge computing optimization, and neural network development.</p>
+                        <div class="tech-stack">
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-hugging-face"></i></a>
+                        <a href="#"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI/ML Developer Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
